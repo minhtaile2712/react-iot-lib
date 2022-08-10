@@ -1,0 +1,24 @@
+{
+  "name": "react-iot-lib",
+  "version": "1.0.0",
+  "description": "React library for IoT projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhtaile2712/react-iot-lib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhtaile2712/react-iot-lib/issues"
+  },
+  "homepage": "https://github.com/minhtaile2712/react-iot-lib#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "socket.io-client": "^4.5.1"
+  }
+}
