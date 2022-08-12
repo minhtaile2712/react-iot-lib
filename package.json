@@ -1,6 +1,6 @@
 {
   "name": "react-iot-lib",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React library for IoT projects",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,9 @@
     "url": "https://github.com/minhtaile2712/react-iot-lib/issues"
   },
   "homepage": "https://github.com/minhtaile2712/react-iot-lib#readme",
-  "dependencies": {
-    "react": "^18.2.0",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
     "socket.io-client": "^4.5.1"
   }
 }

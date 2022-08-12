@@ -1,4 +1,4 @@
-class ContextClient {
+class IoTClient {
   client;
   subscribedChannels;
 
@@ -34,5 +34,4 @@ class ContextClient {
   }
 }
 
-module.exports.ContextClient = ContextClient;
-module.exports.createContextClient = createContextClient;
+export default IoTClient;

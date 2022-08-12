@@ -7,10 +7,37 @@ React library for IoT projects
 In index.js
 
 ```jsx
-const { io } = require("socket.io-client");
-const io = io({ host: host, autoConnect: false });
-client.on("connect", () => console.log("connect"));
-client.on("disconnect", (reason) => console.log("disconnect:", reason));
-client.on("connect_error", (err) => console.log("connect_error:", err.message));
-client.connect();
+import { IoTClient, IoTClientProvider } from "react-iot-lib";
+import { io } from "socket.io-client";
+
+const host = "http://localhost:5000";
+const socket = io(host);
+const ioTClient = new IoTClient(socket);
+```
+
+Wrap your App component
+
+```jsx
+<IoTClientProvider client={ioTClient}>
+  <App />
+</IoTClientProvider>
+```
+
+At component
+
+```jsx
+import { useIoT } from "react-iot-lib";
+
+function Thing() {
+  const { data } = useIoT("hello");
+
+  return (
+    <div>
+      <div>Thing</div>
+      <div>{data} </div>
+    </div>
+  );
+}
+
+export default Thing;
 ```
